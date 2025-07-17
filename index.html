@@ -3,50 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MedicoMart - Dental & Medical Products</title>
+    <title>MediMart - Your Medical Store</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>MedicoMart</h1>
+        <div class="logo">MediMart</div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Dental Products</a></li>
-                <li><a href="#">Medical Products</a></li>
+                <li><a href="#">Products</a></li>
                 <li><a href="#">Contact</a></li>
             </ul>
+            <div class="search-box">
+                <input type="text" placeholder="Search for products..." id="searchBar">
+                <button onclick="searchProduct()">Search</button>
+            </div>
         </nav>
     </header>
-    <section class="hero">
-        <h2>Your One-Stop Shop for Dental & Medical Products</h2>
-        <p>High-quality products at the best prices.</p>
-    </section>
-    <section class="products">
-        <h2>Featured Products</h2>
-        <div class="product-grid">
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Dental Kit">
-                <h3>Dental Kit</h3>
-                <p>Complete set for dental care.</p>
-                <button>Add to Cart</button>
+    <main>
+        <section class="hero">
+            <h1>Welcome to MediMart</h1>
+            <p>Your one-stop shop for medical and dental products.</p>
+            <a href="#" class="btn">Shop Now</a>
+        </section>
+        <section class="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Product 1">
+                    <h3>Digital Thermometer</h3>
+                    <p>$15.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Product 2">
+                    <h3>Blood Pressure Monitor</h3>
+                    <p>$40.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/150" alt="Product 3">
+                    <h3>Dental Kit</h3>
+                    <p>$25.00</p>
+                </div>
             </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Stethoscope">
-                <h3>Stethoscope</h3>
-                <p>Professional-grade stethoscope.</p>
-                <button>Add to Cart</button>
-            </div>
-            <div class="product-card">
-                <img src="https://via.placeholder.com/150" alt="Medical Gloves">
-                <h3>Medical Gloves</h3>
-                <p>Safe and hygienic gloves.</p>
-                <button>Add to Cart</button>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
     <footer>
-        <p>&copy; 2025 MedicoMart. All Rights Reserved.</p>
+        <p>&copy; 2025 MediMart. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
